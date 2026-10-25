@@ -1,0 +1,12 @@
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+.DS_Store
+code/cache/raw/
