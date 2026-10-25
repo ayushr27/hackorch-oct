@@ -1,0 +1,14 @@
+{
+ "run_id": "1ea80f4eb5a1",
+ "requests": 518,
+ "status_counts": {
+  "INCOMPLETE": 355,
+  "COMPLETE": 153,
+  "NOT_APPLICABLE": 10
+ },
+ "offline": false,
+ "live_calls": 15,
+ "cache_hits": 0,
+ "output_sha256": "8290f4cd0ba84e3d45614202e51c3209c6eed36e69dd4e53758dcca4211df6ed",
+ "finished_at": "2026-10-25T09:50:06Z"
+}

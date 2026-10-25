@@ -52,3 +52,67 @@ branch=main
 repo_root=/Users/ayushrahate/Documents/hackerrank-orchestrate-october26-main
 worktree=main
 parent_agent=none
+
+## [2026-10-25T09:22:45Z] Build engine steps 1-3: parsers, identity, linkage, audit
+
+User Prompt (verbatim, secrets redacted):
+yes
+
+Agent Response Summary:
+Implemented the approved plan's steps 1-3 in code/ghost/: evidence parsers for every family (SQL inventory and replica dumps, JSON exports, bundles and ledgers, handover text, 7 log syntaxes with a syntax-agnostic trace join, PDFs via pypdf), identity resolution over current and historical identifiers, a two-tier point-in-time audit engine, and activity-batch linkage. The linkage delay model is calibrated at runtime from evidence-anchored pairs and uses no labels. The first sample run was 32/32 on status and 29/32 exact.
+
+Actions:
+* Created .venv and installed pypdf 6.21.2
+* Wrote code/ghost/{__init__,core,evidence,linkage,audit,intent,perception,pipeline}.py
+* Ran dev comparison scripts in the session scratchpad against dataset/sample_output.csv (evaluation only)
+
+Context:
+tool=Claude Code
+model=claude-opus-5-5
+branch=main
+repo_root=/Users/ayushrahate/Documents/hackerrank-orchestrate-october26-main
+worktree=main
+parent_agent=none
+
+## [2026-10-25T09:22:45Z] Continue: LLM layer, CLI, validator, evaluation, README
+
+User Prompt (verbatim, secrets redacted):
+continue
+
+Agent Response Summary:
+Finished the pipeline, CLI and contract validator, and produced output.csv: 518 rows (355 INCOMPLETE, 153 COMPLETE, 10 NOT_APPLICABLE), validation passed. Added the free-tier LLM layer: Gemini primary, Groq fallback, content-hash cache, usage ledger, schema-validated intent and vision, and a rule veto on explicit retention language. With no API key configured it runs on deterministic fallbacks, and offline output is byte-identical. The evaluation harness reports samples at 100% status, 93.8% exact sequence and step F1 99.5%, with 7/7 custom cases passing. Rewrote the README and added requirements.txt.
+
+Actions:
+* Wrote code/ghost/{validate,llm}.py, code/prompts/{intent,vision}.md, code/main.py, code/evaluation/main.py, code/requirements.txt, README.md
+* Ran python code/main.py (online and --offline), python code/evaluation/main.py
+* Updated history.md
+
+Context:
+tool=Claude Code
+model=claude-opus-5-5
+branch=main
+repo_root=/Users/ayushrahate/Documents/hackerrank-orchestrate-october26-main
+worktree=main
+parent_agent=none
+
+## [2026-10-25T09:50:41Z] Live free-tier LLM run, final output.csv, package code.zip
+
+User Prompt (verbatim, secrets redacted):
+both groq and gemini key added in the .env
+
+Agent Response Summary:
+Checked .env key names only (values never printed) and listed the available models. The first live run failed: gemini-2.5 models are closed to new keys (404), and Groq rejected urllib's default User-Agent (403). Switched to gemini-3.5-flash-lite (intent) and gemini-3.6-flash (vision) and added a User-Agent, after which all 15 calls succeeded. The live run showed the LLM misclassifying sample case_19, so explicit rule signals now win and the LLM decides only requests with no signal (samples back to 100% status). The final --refresh-llm run produced output.csv: 15 calls, 50,550 tokens, $0 actual. Regenerated the reports and packaged code.zip; scans found no secrets or forbidden files.
+
+Actions:
+* Edited code/ghost/llm.py (models, thinking config, User-Agent), code/ghost/pipeline.py (intent arbitration), code/evaluation/main.py (prices, failures table)
+* Ran python code/main.py --refresh-llm --traces code/evaluation/traces (final run), --offline equality check, python code/evaluation/main.py
+* Built code.zip; scanned for .env, nested archives, dataset files and API-key values
+* Updated history.md
+
+Context:
+tool=Claude Code
+model=claude-opus-5-5
+branch=main
+repo_root=/Users/ayushrahate/Documents/hackerrank-orchestrate-october26-main
+worktree=main
+parent_agent=none

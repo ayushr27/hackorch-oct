@@ -1,0 +1,691 @@
+{
+ "170294b529636a4a2c6060f63f19a73e04c970c783e6964d156b62017dabc51d": {
+  "created_at": "2026-10-25T09:46:25Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "audit_record_003": {
+    "identifiers": [
+     "user_03"
+    ],
+    "note": "account_closure_recorded event for subject user_03",
+    "state": "CLEAN"
+   }
+  },
+  "usage": {
+   "input_tokens": 1440,
+   "output_tokens": 49,
+   "thought_tokens": 0
+  }
+ },
+ "17ad12688b9a5ec4ef91ab554dd5ce0a499031e07e08bff3b9cf22189e8934f2": {
+  "created_at": "2026-10-25T09:49:35Z",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "intent",
+  "response": {
+   "labels": [
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT"
+   ]
+  },
+  "usage": {
+   "input_tokens": 4464,
+   "output_tokens": 2517,
+   "thought_tokens": 0
+  }
+ },
+ "27efac06c2e701b64043a0ed6c35b3f45b68525ad22de801304db301b93d5c61": {
+  "created_at": "2026-10-25T09:49:45Z",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "intent",
+  "response": {
+   "labels": [
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT"
+   ]
+  },
+  "usage": {
+   "input_tokens": 4581,
+   "output_tokens": 3502,
+   "thought_tokens": 0
+  }
+ },
+ "31be0e46ed527e4f35c6e117c0425ad08b4b8a72ba5c1fbba33a470e90927a1d": {
+  "created_at": "2026-10-25T09:47:24Z",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "v1",
+  "provider": "groq",
+  "purpose": "vision",
+  "response": {
+   "tombstone_17": {
+    "identifiers": [
+     "user_17"
+    ],
+    "note": "Retained reference",
+    "state": "CLEAN"
+   }
+  },
+  "usage": {
+   "input_tokens": 2313,
+   "output_tokens": 87,
+   "thought_tokens": 0
+  }
+ },
+ "3835b951b95ccdb412513e842399fae489dfc68ac8e695f5cf7fa7d47e448713": {
+  "created_at": "2026-10-25T09:45:48Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "analytics_7438": {
+    "identifiers": [
+     "user_20",
+     "darwish.omar@icloud.com"
+    ],
+    "note": "Omar Darwish darwish.omar@icloud.com",
+    "state": "PII"
+   }
+  },
+  "usage": {
+   "input_tokens": 1413,
+   "output_tokens": 57,
+   "thought_tokens": 0
+  }
+ },
+ "40ab011d2371a8c4735c165d5ab607b7c08e649cb66d311f35c5352903694a3c": {
+  "created_at": "2026-10-25T09:45:30Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "account_5762": {
+    "identifiers": [
+     "user_11",
+     "haruka.s1838@zoho.com",
+     "+81 90 7610 2507"
+    ],
+    "note": "Shows name Haruka Sato, email haruka.s1838@zoho.com, and phone number +81 90 7610 2507",
+    "state": "PII"
+   }
+  },
+  "usage": {
+   "input_tokens": 1427,
+   "output_tokens": 106,
+   "thought_tokens": 0
+  }
+ },
+ "52cbfe90ab947a2b4e3e6aba6b1f35214644aee9bb99a9b7f3d3d16d6544f852": {
+  "created_at": "2026-10-25T09:49:55Z",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "intent",
+  "response": {
+   "labels": [
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT"
+   ]
+  },
+  "usage": {
+   "input_tokens": 4305,
+   "output_tokens": 3409,
+   "thought_tokens": 0
+  }
+ },
+ "539b5b88c50b57ba00240109c9f73365dec1a75f79a69f1b6ee56f1a4de54524": {
+  "created_at": "2026-10-25T09:45:36Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "search_428": {
+    "identifiers": [
+     "g.silva76@gmail.com",
+     "user_13"
+    ],
+    "note": "search_428 record exists with email g.silva76@gmail.com",
+    "state": "PII"
+   }
+  },
+  "usage": {
+   "input_tokens": 1438,
+   "output_tokens": 64,
+   "thought_tokens": 0
+  }
+ },
+ "7f3f844b357a12bb4e2b24e2416398bac326438a2d4e747c29f067271b5b8139": {
+  "created_at": "2026-10-25T09:45:42Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "data_flow_1121": {
+    "identifiers": [
+     "jain.aditi@gmail.com"
+    ],
+    "note": "Continuous sync",
+    "state": "ACTIVE"
+   }
+  },
+  "usage": {
+   "input_tokens": 1415,
+   "output_tokens": 40,
+   "thought_tokens": 207
+  }
+ },
+ "a2bced5ff541cc5dc2ad94c66beef65b75a0219d57abd2cf1c8f800b587a3fe2": {
+  "created_at": "2026-10-25T09:46:20Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {},
+  "usage": {
+   "input_tokens": 1413,
+   "output_tokens": 77,
+   "thought_tokens": 261
+  }
+ },
+ "a67b74fe52a89cef2acffc6fa55ce9793b80176737ce9c09f5221525428f4c5d": {
+  "created_at": "2026-10-25T09:48:31Z",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "v1",
+  "provider": "groq",
+  "purpose": "vision",
+  "response": {
+   "object_19": {
+    "identifiers": [],
+    "note": "delivery_confirmation_19.pdf",
+    "state": "CLEAN"
+   }
+  },
+  "usage": {
+   "input_tokens": 2310,
+   "output_tokens": 77,
+   "thought_tokens": 0
+  }
+ },
+ "c63be195ff549cac6891cfec97733aba2180d231def256097ccb9bc8575f08dc": {
+  "created_at": "2026-10-25T09:49:28Z",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "v1",
+  "provider": "groq",
+  "purpose": "vision",
+  "response": {
+   "marketing_001": {
+    "identifiers": [
+     "Soo-jin Park",
+     "sj.park@naver.com",
+     "+82-10-5837-9451"
+    ],
+    "note": "marketing_001 · sj.park@naver.com · +82-10-5837-9451",
+    "state": "PII"
+   }
+  },
+  "usage": {
+   "input_tokens": 2312,
+   "output_tokens": 141,
+   "thought_tokens": 0
+  }
+ },
+ "c8ddd13f23597a75c3419c576c9621e4f09269fb8a80fd636648ef36f942ade9": {
+  "created_at": "2026-10-25T09:46:06Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "export_1260": {
+    "identifiers": [
+     "ingrid.dahl@outlook.com"
+    ],
+    "note": "ingrid.dahl@outlook.com",
+    "state": "PII"
+   }
+  },
+  "usage": {
+   "input_tokens": 1439,
+   "output_tokens": 49,
+   "thought_tokens": 260
+  }
+ },
+ "cbf45165b426a816b270bc6a4fc4833f14370b20a52360cacc2bcb2661b5dfd4": {
+  "created_at": "2026-10-25T09:46:12Z",
+  "model": "gemini-3.6-flash",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "vision",
+  "response": {
+   "support_1034": {
+    "identifiers": [
+     "kagyeman8947@fastmail.com"
+    ],
+    "note": "Customer email kagyeman8947@fastmail.com visible",
+    "state": "PII"
+   }
+  },
+  "usage": {
+   "input_tokens": 1427,
+   "output_tokens": 58,
+   "thought_tokens": 174
+  }
+ },
+ "e3c8e71e0e5b69034faf958fae45dfbf4ef03216e2372255b107a377607b2476": {
+  "created_at": "2026-10-25T09:50:05Z",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "v1",
+  "provider": "google-ai-studio",
+  "purpose": "intent",
+  "response": {
+   "labels": [
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "NON_DELETION",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT",
+    "DELETE_ACCOUNT"
+   ]
+  },
+  "usage": {
+   "input_tokens": 4280,
+   "output_tokens": 3438,
+   "thought_tokens": 0
+  }
+ }
+}
