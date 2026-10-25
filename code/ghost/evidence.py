@@ -14,6 +14,7 @@ restore allowed), INACTIVE (flow disabled or restore blocked).
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import shutil
@@ -21,7 +22,7 @@ import sqlite3
 import subprocess
 from dataclasses import dataclass, field
 
-from .core import (RESOURCE_RE, ManifestEntry, norm_ident, norm_ts, text_idents)
+from .core import (CACHE_DIR, RESOURCE_RE, ManifestEntry, norm_ident, norm_ts, text_idents)
 
 ABSENT, PII, CLEAN, ACTIVE, INACTIVE = "ABSENT", "PII", "CLEAN", "ACTIVE", "INACTIVE"
 
@@ -473,18 +474,33 @@ def _parse_log(m: ManifestEntry, idx: EvidenceIndex):
 
 # -------------------------------------------------------------------- PDF
 
-def pdf_text(path) -> str:
+PDF_TEXT_CACHE = CACHE_DIR / "pdf_text.json"
+
+
+def _extract_pdf(path) -> str:
     try:
         import pypdf  # type: ignore
         reader = pypdf.PdfReader(str(path))
-        text = "\n".join(p.extract_text() or "" for p in reader.pages)
+        return "\n".join(p.extract_text() or "" for p in reader.pages)
     except ImportError:
         if not shutil.which("pdftotext"):
             raise RuntimeError("PDF evidence needs `pip install pypdf` (or poppler's pdftotext)")
-        text = subprocess.run(["pdftotext", "-layout", str(path), "-"], capture_output=True,
+        return subprocess.run(["pdftotext", "-layout", str(path), "-"], capture_output=True,
                               text=True, check=True).stdout
+
+
+def pdf_text(path) -> str:
+    """Extracted text, cached by the PDF's sha256 so every environment parses identically
+    (and runs without pypdf/poppler once the committed cache exists)."""
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    cache = json.loads(PDF_TEXT_CACHE.read_text(encoding="utf-8")) if PDF_TEXT_CACHE.exists() else {}
+    if digest not in cache:
+        cache[digest] = _extract_pdf(path)
+        PDF_TEXT_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        PDF_TEXT_CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True, ensure_ascii=False) + "\n",
+                                  encoding="utf-8")
     # The generator splits "HH:MM" across a column boundary ("10\n24 UTC" / "10 | 24 UTC").
-    return re.sub(r"(\b\d{1,2})\s*(?:\|\s*)?\n?\s*(\d{2}) UTC", r"\1:\2 UTC", text)
+    return re.sub(r"(\b\d{1,2})\s*(?:\|\s*)?\n?\s*(\d{2}) UTC", r"\1:\2 UTC", cache[digest])
 
 
 def _parse_pdf(m: ManifestEntry, idx: EvidenceIndex):

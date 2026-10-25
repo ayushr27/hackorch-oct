@@ -48,10 +48,11 @@ def main(argv=None) -> int:
     engine_kw, llm = build_perception(offline=args.offline, refresh=args.refresh_llm,
                                       max_calls=args.max_llm_calls)
 
-    context = [p for p in args.context if p.resolve() != args.input.resolve()]
+    context = [p for p in args.context if p.exists() and p.resolve() != args.input.resolve()]
     eng, main_reqs, _, results = run_all(args.input, context, **engine_kw)
     ordered = sorted((results[r.case_id] for r in main_reqs), key=lambda r: case_sort_key(r.case_id))
-    args.output.write_text(serialise(ordered), encoding="utf-8", newline="")
+    with open(args.output, "w", encoding="utf-8", newline="") as fh:
+        fh.write(serialise(ordered))
     if args.traces:
         write_traces(ordered, args.traces)
 

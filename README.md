@@ -14,8 +14,10 @@ python3 -m venv .venv && .venv/bin/pip install -r code/requirements.txt   # pypd
 .venv/bin/python code/evaluation/main.py      # → code/evaluation/{evaluation_report,usage_report}.md
 ```
 
-Python ≥ 3.10. Everything else is the standard library (sqlite3, json, csv, urllib).
-If `pypdf` is missing, poppler's `pdftotext` is used when available.
+Python ≥ 3.9 (tested on 3.9.6 and 3.14). Everything else is the standard library (sqlite3, json,
+csv, urllib). PDF text is cached in `code/cache/pdf_text.json`, so the run also works with no
+`pypdf`/`pdftotext` installed; plain `python3 code/main.py` without a venv is fine.
+On Windows use `.venv\Scripts\python code\main.py`.
 
 | Command | What it does |
 |---|---|

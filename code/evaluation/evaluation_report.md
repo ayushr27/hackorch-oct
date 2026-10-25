@@ -1,6 +1,6 @@
 # Evaluation report — Ghost Data Still Exists
 
-_Generated 2026-10-25 09:50 UTC by `python3 code/evaluation/main.py`._
+_Generated 2026-10-25 10:00 UTC by `python3 code/evaluation/main.py`._
 
 ## 1. Public sample set (32 cases with published answers)
 

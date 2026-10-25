@@ -1,6 +1,6 @@
 # Usage report — Ghost Data Still Exists
 
-_Generated 2026-10-25 09:50 UTC from `code/cache/usage_ledger.jsonl`._
+_Generated 2026-10-25 10:00 UTC from `code/cache/usage_ledger.jsonl`._
 
 ## Final full-dataset run that produced `output.csv`
 

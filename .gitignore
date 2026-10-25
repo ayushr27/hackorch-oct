@@ -10,3 +10,4 @@ __pycache__/
 *.tgz
 .DS_Store
 code/cache/raw/
+submission/
